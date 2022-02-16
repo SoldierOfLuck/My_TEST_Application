@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Погодное приложение</string>
+    <string name="temperature_label">Температура</string>
+    <string name="feels_like_label">Ощущается как</string>
+    <string name="city_coordinates">Координаты: %s, %s"</string>
+    <string name="error">Ошибка</string>
+    <string name="reload">Перезагрузка</string>
+    <string name="Moscow">Москва</string>
+    <string name="sucсess">Успех</string>
+    <string name="air_humidity">Влажность воздуха</string>
+    <string name="humidity">%s %</string>
+    <string name="wind">Ветер</string>
+    <string name="wind_value">%s"</string>
+    <string name="UV_index">УФ-индекс</string>
+    <string name="UV_value">%s"</string>
+    <string name="low">Низкий</string>
+    <string name="kmh">км/ч</string>
+</resources>

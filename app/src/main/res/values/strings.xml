@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Weather application</string>
+    <string name="temperature_label">Temperature</string>
+    <string name="feels_like_label">Feels like</string>
+    <string name="city_coordinates">lt/ln: %s, %s"</string>
+    <string name="error">Error</string>
+    <string name="reload">Reload</string>
+    <string name="Moscow">Moscow</string>
+    <string name="sucсess">Success</string>
+    <string name="air_humidity">Air humidity</string>
+    <string name="humidity">%s",%</string>
+    <string name="wind">Wind</string>
+    <string name="wind_value">%s"</string>
+    <string name="UV_index">UV-index</string>
+    <string name="UV_value">%s"</string>
+    <string name="low">Low</string>
+    <string name="kmh">km/h</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
