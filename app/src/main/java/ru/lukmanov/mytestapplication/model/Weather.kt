@@ -1,7 +1,10 @@
 package ru.lukmanov.mytestapplication.model
 
+import android.os.Parcel
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
-
+@Parcelize
 data class Weather(
     val city: City = getDefaultCity(),
     val temperature: Int = -7,
@@ -9,7 +12,7 @@ data class Weather(
     val humidity: Int = 86,
     val wind: Int = 11,
     val uv: String = "Low"
-)
+): Parcelable
 
 fun getDefaultCity() = City("Москва", 55.755826, 37.617299900000035)
 

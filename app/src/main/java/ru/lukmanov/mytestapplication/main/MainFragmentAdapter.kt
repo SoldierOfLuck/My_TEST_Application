@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import ru.lukmanov.mytestapplication.R
 import ru.lukmanov.mytestapplication.model.Weather
 
-class MainFragmentAdapter  :
+class MainFragmentAdapter (private var onItemViewClickListener: MainFragment.OnItemViewClickListener?) :
     RecyclerView.Adapter<MainFragmentAdapter.MainViewHolder>() {
 
     private var weatherData: List<Weather> = listOf()
@@ -42,6 +42,7 @@ class MainFragmentAdapter  :
         fun bind(weather: Weather) {
             itemView.findViewById<TextView>(R.id.mainFragmentRecyclerItemTextView).text = weather.city.city
             itemView.setOnClickListener {
+                onItemViewClickListener?.onItemViewClick(weather)
                 Toast.makeText(
                     itemView.context,
                     weather.city.city,
