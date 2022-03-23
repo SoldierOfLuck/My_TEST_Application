@@ -1,4 +1,4 @@
-package ru.lukmanov.mytestapplication
+package ru.lukmanov.kotlin_course_app
 
 import org.junit.Test
 

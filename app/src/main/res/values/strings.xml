@@ -11,10 +11,9 @@
     <string name="humidity">%s",%</string>
     <string name="wind">Wind</string>
     <string name="wind_value">%s"</string>
-    <string name="UV_index">UV-index</string>
-    <string name="UV_value">%s"</string>
-    <string name="low">Low</string>
+    <string name="season">Season</string>
+    <string name="season_value">%s"</string>
+    <string name="summer">Summer</string>
     <string name="kmh">km/h</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

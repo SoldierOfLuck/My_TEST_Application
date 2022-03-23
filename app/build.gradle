@@ -8,13 +8,20 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "ru.lukmanov.mytestapplication"
+        applicationId "ru.lukmanov.kotlin_course_app"
         minSdk 23
         targetSdk 31
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes.each {
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file("apikey.properties").newDataInputStream())
+        def apiKey  = properties.getProperty("yandex_weather_api_key", "")
+        it.buildConfigField "String", "WEATHER_API_KEY", apiKey
     }
 
     buildFeatures {
@@ -37,7 +44,7 @@ android {
 }
 
 dependencies {
-
+    implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'

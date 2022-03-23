@@ -11,8 +11,8 @@
     <string name="humidity">%s %</string>
     <string name="wind">Ветер</string>
     <string name="wind_value">%s"</string>
-    <string name="UV_index">УФ-индекс</string>
-    <string name="UV_value">%s"</string>
-    <string name="low">Низкий</string>
+    <string name="season">УФ-индекс</string>
+    <string name="season_value">%s"</string>
+    <string name="summer">Лето</string>
     <string name="kmh">км/ч</string>
 </resources>
